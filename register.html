@@ -1,0 +1,36 @@
+<!-- register.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="register-container">
+        <form action="register.php" method="post" class="register-form">
+            <h2>Create New Account</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <!-- Tambahkan dropdown list untuk pilihan divisi -->
+            <label for="division">Division:</label>
+            <select id="division" name="division" required>
+                <option value="IT">IT</option>
+                <option value="Operations">Operations</option>
+                <option value="Content">Content</option>
+            </select>            
+
+                
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>

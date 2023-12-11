@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <header>
+        <div class="logo">My Profile</div>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Devices</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Screen 1 (location-Jl. Boulevard)</a></li>
+                        <li><a href="#">Screen 2 (location-Jl. Serpong)</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Settings</a>
+                    <ul class="dropdown-content">
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="profile.html">My Account</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="content">
+        <div id="profile-info">
+            <h2>Welcome to My Profile</h2>
+            <p>Here you can view and update your profile information.</p>
+            <button>Log out from My Account</button>    
+        <form action="deleteAcc.php" method="post">
+            <button type="submit" id="deleteAccountBtn" name="deleteAccount">Delete My Account</button>
+        </form>
+            
+            <!--button id="deleteAccountBtn">Delete My Account</button>
+            Add more profile information as needed -->
+        </div>
+    </section>
+</body>
+</html>

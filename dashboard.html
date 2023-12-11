@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <header>
+        <div class="logo">OLED Display Controller</div>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Home</a></li>
+                <li><a href="#">Devices</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Screen 1 (location-Jl. Boulevard)</a></li>
+                        <li><a href="#">Screen 2 (location-Jl. Serpong)</a></li>
+                        <!-- Add more devices as needed -->
+                    </ul>
+                </li>
+                <li><a href="#">Settings</a>
+                    <ul class="dropdown">
+                        <li><a href="history.php">History</a></li>
+                        <li><a href="profile.html">My Account</a></li>
+                        <!-- Add more devices as needed -->
+                    </ul>                
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="register-form">
+        <form action="save_history.php" method="post" class="register-form">
+            <h2>Arduino Nano Controller</h2>
+                <label for="text">text:</label>
+                <input type="text" id="text" name="text" required>
+                <button type="submit">Input to OLED Screen</button>
+    </form>
+
+    <div id="oledScreen" class="oled-screen">
+    <div class="output-text"></div> 
+
+    </div>
+
+    <!--script src="script-test.js"></script-->
+</body>
+</html>
